@@ -1,0 +1,15 @@
+include lib/bemto.pug
+- set_bemto_settings({ modifier: "--" })
+
+doctype html 
+html(lang="ru") 
+  head 
+    block head 
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='icon', href='images/favicon.png')
+    link(rel='stylesheet', href='css/app.min.css')
+  body 
+    #main 
+      block content
+      script(src='js/app.min.js')
